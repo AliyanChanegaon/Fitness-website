@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Poppins:wght@200;300;400&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body {
+  --main-color: #283526;
+  --primry-color: #888888;
+  --button-background: #4b709e;
+  --primary-button-background: #fe7649;
+  --background-color: #f0f7ff;
+}
+
+h1,
+h2 {
+  font-family: "Gloock", serif;
+  font-family: "Poppins", sans-serif;
+  color: var(--main-color);
+}
+h3,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: var(--main-color);
+}
+
+h3 {
+  font-weight: 750;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  line-height: 6rem;
+}
+
+p,
+a,
+li,
+button {
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+  list-style: none;
+}
+button {
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+  border: 0;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  font-size: 2rem;
+  font-weight: normal;
+  outline: none;
+}
+header {
+  padding: 0 20rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 12rem;
+}
+
+header nav .left-side {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 50%;
+  /* height: 12rem; */
+}
+
+header nav .left-side a img {
+  height: 5.5rem;
+
+  margin-right: 15px;
+}
+
+header nav .left-side .sub-menu {
+  height: inherit;
+  display: flex;
+}
+
+header nav .left-side .sub-menu a {
+  margin-right: 4.5rem;
+  position: relative;
+  z-index: 9;
+}
+
+header nav .left-side .sub-menu a li {
+  font-size: 1.5rem;
+  line-height: 3.6rem;
+  text-transform: capitalize;
+  transition: all 0.2s;
+}
+
+header nav .left-side .sub-menu a li:hover {
+  color: var(--button-background);
+}
+
+/* right side css  */
+
+header .right-side {
+  width: 50%;
+  display: flex;
+  justify-content: end;
+}
+
+header .right-side .sub-menu {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.right-side .sub-menu li{
+  background-color: var(--background-color);
+  padding: 0.9rem 1.7rem;
+  border-radius: 1.4rem;
+  
+  
+}
+
+header .right-side .sub-menu a {
+  margin-right: 2rem;
+  padding: 0.7rem 2rem;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 999;
+}
+
+header .right-side .sub-menu button {
+  padding: 0.5rem 2.5rem;
+  position: relative;
+  z-index: 999;
+
+  /* background-color: var(--button-background); */
+  background-color: #2a5e99;
+  color: white;
+}
+
+header .right-side .sub-menu button:hover {
+  background-color: #1b3d63;
+  position: relative;
+  z-index: 999;
+
+  color: white;
+}
+
+/* Herro seciton */
+.hero-section {
+  padding: 0 20rem;
+  max-width: 1400px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem 0;
+}
+
+.hero-section .hero-left {
+  width: 50%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.hero-section > .hero-left > h1 {
+  width: 55rem;
+  font-size: 7.5rem;
+  line-height: 90px;
+  margin-bottom: 5rem;
+}
+
+.hero-section > .hero-left > p {
+  margin-bottom: 8rem;
+  width: 45rem;
+  font-size: 1.5rem;
+}
+
+.hero-section a img {
+  width: 13.5rem;
+  height: 4rem;
+}
+
+.hero-section .button-group .appstore {
+  height: 4.3rem;
+  margin-bottom: -0.4rem;
+}
+.hero-section .button-group a:first-child {
+  margin-right: 2.5rem;
+}
+
+.hero-section .hero-right {
+  width: 50%;
+  height: 100vh;
+  background-color: var(--button-background);
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+  background: linear-gradient(90deg, rgba(75,112,158,1) 0%, rgba(15,42,75,1) 82%);
+  border-radius: 90px 2rem 0px 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-section .hero-right img {
+  width: 100%;
+  height: 90rem;
+  margin-right: 43rem;
+}
+
+
+/* 55min */
